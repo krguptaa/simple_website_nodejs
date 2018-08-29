@@ -1,79 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('fonts/BEBAS___-webfont.eot');
+    src: url('fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BEBAS___-webfont.woff') format('woff'),
+         url('fonts/BEBAS___-webfont.ttf') format('truetype'),
+         url('fonts/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
-
-.bg-3 { 
-      background-color: #ffffff;
-      color: #555555;
-  }
-  .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-  }
-  .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
+  font-size:100%;
+  font-family:Georgia, "Times New Roman", Times, serif;
+  color:#3a3a3a;
+  font-size: 12px;
       letter-spacing: 5px;
+}
+
+.body {
+  width:576px;
+  margin:0 auto;
+  display:block;
+  
+}
+
+h1 {
+  width:498px;
+  height:64px;
+  background:url(images/h1-bg.jpg);
+  color:#fff;
+  font-family:bebas;
+  padding:17px 0px 0px 78px;
+  letter-spacing:1px;
+  font-size:2.2em;
+  margin:0 auto;
+}
+
+form {
+  width:459px;
+  margin:0 auto;
+}
+
+label {
+  display:block;
+  margin-top:20px;
+  letter-spacing:2px;
+}
+
+input, textarea {
+  width:439px;
+  height:27px;
+  background:#efefef;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border:1px solid #dedede;
+  padding:10px;
+  margin-top:3px;
+  font-size:0.9em;
+  color:#3a3a3a;
+}
+
+  input:focus, textarea:focus {
+    border:1px solid #97d6eb;
   }
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
-  }
-.active>a {
-    color: #1abc9c !important;;
+
+textarea {
+  height:213px;
+  font-family:Arial, Helvetica, sans-serif;
+  background:url(../images/textarea-bg.jpg) right no-repeat #efefef;
+}
+
+#submit {
+  background:url(../images/submit.jpg);
+  width:127px;
+  height:38px;
+  text-indent:-9999px;
+  border:none;
+  margin-top:20px;
+  cursor:pointer;
+}
+
+  #submit:hover {
+    opacity:0.9;
   }
 
 
-    form {
-        /* Just to center the form on the page */
-        margin: 0 auto;
-        width: 400px;
-        /* To see the outline of the form */
-        padding: 1em;
-        border: 1px solid #CCC;
-        border-radius: 1em;
-      }
-      form div + div {
-        margin-top: 1em;
-      }
-      label {
-        /* To make sure that all labels have the same size and are properly aligned */
-        display: inline-block;
-        width: 90px;
-        text-align: right;
-      }
-      input, textarea {
-        /* To make sure that all text fields have the same font settings By default, textareas have a monospace font */
-        font: 1em sans-serif;
-        /* To give the same size to all text fields */
-        width: 300px;
-        box-sizing: border-box; /* To harmonize the look & feel of text field border */
-        border: 1px solid #999;
-      }
-      input:focus, textarea:focus {
-        /* To give a little highlight on active elements */
-        border-color: #000;
-      }
-      textarea {
-        /* To properly align multiline text fields with their labels */
-        vertical-align: top;
-        /* To give enough room to type some text */
-        height: 5em;
-      }
-      .button {
-        /* To position the buttons to the same position of the text fields */
-        padding-left: 90px;
-        /* same size as the label elements */
-      }
-      button {
-        /* This extra margin represent roughly the same space as the space between the labels and their text fields */
-        margin-left: .5em;
-      }
+
+footer a img {
+  border:none;
+  float:right;
+  margin:0px 59px 40px 0px;
+}

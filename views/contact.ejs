@@ -5,23 +5,30 @@
 </head>
 <body>
 <% include partials/menu %>
-<div class="container-fluid bg-3 text-center">    
+  <header class="body">
+  Get in Touch
+    </header>
 
- <form action="/contact-form" method="post">
-        <div>
-          <label for="name">Name:</label> <input type="text" id="name" name="user_name">
-        </div>
-        <div>
-          <label for="mail">E-mail:</label> <input type="email" id="mail" name="user_mail">
-        </div>
-        <div>
-          <label for="msg">Message:</label> <textarea id="msg" name="user_message"></textarea>
-        </div>
-        <div class="button">
-          <button type="submit">Send your message</button>
-        </div>
-    </form>
-</div>
+
+<section class="body">
+
+ <form method="post">
+        
+    <label>Name</label>
+    <input name="name" placeholder="Type Here">
+            
+    <label>Email</label>
+    <input name="email" type="email" placeholder="Type Here">
+            
+    <label>Message</label>
+    <textarea name="message" placeholder="Type Here"></textarea>
+            
+    <input id="submit" name="submit" type="submit" value="Submit">
+        
+</form>
+    </section>
+
+<% include partials/footer %>
 </body>
 <% include partials/script %>
 </html>
