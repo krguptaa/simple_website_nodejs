@@ -5,16 +5,17 @@
 </head>
 <body>
 <% include partials/menu %>
-  <header class="body">
-  Get in Touch
-    </header>
-
+<header class="body">
+      Get in Touch
+</header>
 
 <section class="body">
-
- <form method="post">
+ <% if (typeof message != 'undefined' && message) { %>
+    <h2><%= message %></h2>
+<% } %>
+ <form method="post" action="contact">
         
-    <label>Name</label>
+    <label>Name</label> 
     <input name="name" placeholder="Type Here">
             
     <label>Email</label>
@@ -26,7 +27,7 @@
     <input id="submit" name="submit" type="submit" value="Submit">
         
 </form>
-    </section>
+</section>
 
 <% include partials/footer %>
 </body>

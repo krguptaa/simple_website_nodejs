@@ -1,11 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-// /* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('index', { title: 'Express' });
-// });
-
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -22,5 +17,10 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', {page:'Contact', menuId:'contact'});
 });
 
+/* POST contact page. */
+router.post('/contact', function(req, res, next) {
+	res.render('contact', {page:'Contact', message: 'Successs !!!', menuId:'contact'});
+
+});
 
 module.exports = router;
